@@ -46,7 +46,6 @@ export default {
   created() {
     axios.get('https://api.github.com/search/repositories?q=vue')
       .then((response) => {
-        console.log(response);
         this.repositories = response.data;
       });
   },
